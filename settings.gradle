@@ -8,15 +8,20 @@ pluginManagement {
             }
         }
         mavenCentral()
+        //maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
         gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    /*  不能改动   */
     repositories {
         google()
         mavenCentral()
+        //maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }     //不能加
     }
+
 }
 
 rootProject.name = "coolWeather"
